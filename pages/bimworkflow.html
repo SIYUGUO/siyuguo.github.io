@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Interactive Ground</title>
+    <link rel="shortcut icon" href="../p_image/logo.png">
+    <script src="https://use.fontawesome.com/f3a7dfaa36.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400|Roboto+Slab:300,400|Ubuntu:300,400" rel="stylesheet">
+    <script src='../p_js/jquery-3.1.1.min.js'></script>
+    <script src='../p_js/js.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../p_css/style.css" media="screen" title="no title">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-90454244-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <header class='non-fixed' id='top'>
+        <a href="../index.html">
+            <img class='logo_img' src="../p_image/logo.png" alt="logo of Siyu" />
+        </a>
+        <nav class="nav nav_bread">
+            <a href="#"><img class="bread_img" onclick="show_nav()" src="../p_image/bread.png" alt="nav bread icon" /></a>
+        </nav>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../Siyu-Guo-Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="title clearfix" style="background-color:black; color:rgba(0,0,0,0.8);">
+        <h1 style="color: white; margin-top:45vh">A BIM Modeling workflow</h1>
+        <p style="color: darkgray">Exploration on parallel modeling between Grasshopper &amp; Dynamo</p>
+        <img src="image/workflow/title.png" alt="lighting design title"/>
+    </section>
+    <div class="full" id='full' onclick='show_page()'>
+        <ul>
+            <li><a href="../index.html#portfolio">Portfolio</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../Siyu-Guo-Resume.pdf" target="_blank">Resume</a></li>
+        </ul> 
+    </div>
+    
+    <!-- Begin of custom code -->    
+    <section class="page clearfix">
+        <div class="clearfix" style="border-bottom:1px solid rgba(0,0,0,0.2);">
+            <div class="col-md-6">
+                <p>
+                  <b>Project Type:&nbsp;&nbsp;</b>Architecture Design
+                </p>
+                <p>
+                  <b>Roles:&nbsp;&nbsp;</b>Designer &amp; Programmer
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>
+                  <b>Team:&nbsp;&nbsp;</b>Individual
+                </p>
+                <p>
+                  <b>Timeline:&nbsp;&nbsp;</b>Spring 2017
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page clearfix">
+        <div>
+          <h1 class="center">Design Challenge -<br>Modeling in both Rhino &amp; Revit at the same time</h1>
+          <p>
+            Architects always need to do modeling in both Rhino &amp; Revit due to the current limitation of the modeling workflow and software‘s compatible issue. It is absolutely a issue that will cost redundant time and budget when you have to do the same thing in different softwares. A new workflow needs to be developed right away.
+          </p>
+        </div>
+        <div>
+            <p class="text">
+            As a researcher in BlackBox, I've tested a lot of products which could allow architects to parallel modeling between programs. One the successful guide I've been working on was utilize excel, grasshopper, flux, dynamo and revit to modeling the curtain wall in the most efficient way.
+            </p>
+            <div class="col-md-8">
+                <img src="image/workflow/diagram_1.png" alt="" />
+            </div>
+            <div class="col-md-4">
+                <h3>Step 1 - Export General Info from Excel to GH</h3>
+                <p>
+                This step we load the information from building program sheet to the grasshopper. What we need is the floor height line as well as curtain wall divide line.
+                </p>
+            </div>
+
+            <div class="col-md-8">
+              <img src="image/workflow/diagram_2.png" alt="" />
+            </div>
+            <div class="col-md-4">
+                <h3>Step 2 - Generating the entire curtain wall in GH</h3>
+                <p>
+                This is three groups of customized grasshopper scripts that I made to automatically generating curtain wall details in Rhino.
+                </p>
+            </div>
+            
+            <div class="col-md-8">
+              <img src="image/workflow/diagram_3.png" alt="" />
+            </div>
+            <div class="col-md-4">
+                <h3>Step 3 - Pick up the nodes from GH then upload to Flux.io</h3>
+                <p>
+                After we created the model in grasshopper, we can extract the node information of each curtain wall and upload them to the flux.io platform.
+                </p>
+            </div>
+            
+            <div class="col-md-8">
+              <img src="image/workflow/diagram_4.png" alt="" />
+            </div>
+            <div class="col-md-4">
+                <h3>Step 4 - Gathering the node info then transfer to Dynamo</h3>
+                <p>
+                Now as long as we installed both flux plugin in grasshopper &amp; dynamo, we could see the real-time update in both programs. We could apply the pre-made revit curtain family to the nodes we generated from GH through dynamo.
+                </p>
+            </div>
+            </div>
+    </section>
+    
+    <section class="page clearfix grey">
+    <h1 class="center">Customized scripts for checking the planarity of each curtain panel</h1>
+    <p class="text">
+      The information below shows the another customized scripts I've developed during the time I was in charge of this project. It is a tool for checking the planarity of each curtain panel.
+    </p>
+    <img src="image/workflow/diagram_5.jpg" alt="lighting design title"/>
+    
+    <p class="text">
+      The information below shows the detail drawings of the curtain wall as well as the solar analysis in different shade mode.
+    <img src="image/workflow/diagram_6.jpg" alt="lighting design title"/>
+    </section>
+
+
+<!-- End of custom code -->
+<div class="backtotop">
+    <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</div>    
+<footer class="end-nav">
+  <a class="previous" href="../index.html#portfolio">
+    <p>
+      < PREV></PREV></p>
+        <p class="project">
+          &nbsp;&nbsp;Back to Projects
+        </p>
+  </a>
+  <a class="next" href="tensegrity_1.html">
+    <p>NEXT ></p>
+    <p class="project">
+      A Tensegrity Story 1.0&nbsp;&nbsp;
+    </p>
+  </a>
+
+</footer>
+<script src="../p_js/js/lightbox-plus-jquery.min.js"></script>   
+</body>
+</html>

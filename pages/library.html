@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Interactive Ground</title>
+    <link rel="shortcut icon" href="../p_image/logo.png">
+    <script src="https://use.fontawesome.com/f3a7dfaa36.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400|Roboto+Slab:300,400|Ubuntu:300,400" rel="stylesheet">
+    <script src='../p_js/jquery-3.1.1.min.js'></script>
+    <script src='../p_js/js.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../p_css/style.css" media="screen" title="no title">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-90454244-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <header class='non-fixed' id='top'>
+        <a href="../index.html">
+            <img class='logo_img' src="../p_image/logo.png" alt="logo of Siyu" />
+        </a>
+        <nav class="nav nav_bread">
+            <a href="#"><img class="bread_img" onclick="show_nav()" src="../p_image/bread.png" alt="nav bread icon" /></a>
+        </nav>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../Siyu-Guo-Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="title clearfix" style="background-color:rgb(245,244,243); color:rgba(0,0,0,0.8);">
+<!--
+        <h1>Light_brary</h1>
+        <p>Washington Library Renovation</p>
+-->
+        <img src="image/library/title.jpg" alt="lighting design title"/>
+    </section>
+    <div class="full" id='full' onclick='show_page()'>
+        <ul>
+            <li><a href="../index.html#portfolio">Portfolio</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../Siyu-Guo-Resume.pdf" target="_blank">Resume</a></li>
+        </ul> 
+    </div>
+    
+    <!-- Begin of custom code -->    
+    <section class="page clearfix">
+        <div class="clearfix" style="border-bottom:1px solid rgba(0,0,0,0.2);">
+            <div class="col-md-6">
+                <p>
+                  <b>Project Type:&nbsp;&nbsp;</b>Architectural Renovation (Academic
+                   work)
+                </p>
+                <p>
+                  <b>Roles:&nbsp;&nbsp;</b>Designer
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>
+                  <b>Team:&nbsp;&nbsp;</b>Individual
+                </p>
+                <p>
+                  <b>Timeline:&nbsp;&nbsp;</b>Fall 2014
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="page clearfix" style="margin-top:-80px;">
+    <h1 class="center">Design Challenge -<br>This is a story of invite natural light to the Chicago Washington Library</h1>
+      <p class="text">
+        Chicago Harold Washington Library has been serving for the entire city as a centural library since it has been built on 1990. The biggest problem of the building is about the natural light. The corrent conclosure structure blocked 94% of natural light on facade. In order to give this popular space a fresh looking and feeling, our design needs to start from solve this problem.
+        <br>
+        The aim of this project was to inverse the original condition of the Washington library but still preserve the classical quality of its present architecture. Through methodical calculations, we carved out volumes to allow maximum penetration of sunlight through two main cores. To contrast the new and the old, we preserved the residual dim space of the building and carved out a third primary core. 
+      </p>  
+    <img src="image/library/diagram_1.jpg" alt="lighting design title"/>
+    </section>
+
+    <section class="page clearfix">
+    <h1 class="center">Re-design the overall volume of the building</h1>
+    <p class="text">
+        Numbers on each 20 x 20 panel represent the total hours of radiance per day. In order to maximize the solar penetration during the day, I carved out the new volumn through this grasshopper solar radiance calculator.This is a mixed structure system consists of original slab-column system with additional arch elements used to support the new centural core.The new interior space consists of 915 cubes in three lighting conditions which meet both the space requirement of programs and lighting requirement of different functions.    
+    </p>
+    <img src="image/library/diagram_2.png" alt="lighting design title"/>
+    </section>
+
+    <section class="page clearfix" style="background-color:rgb(245,244,243)">
+        <h1 class="center">New Live of the library</h1>
+        <p class="text">
+          The image below shows the new interior of the library with a group of detailed diagrams on each element.
+        </p>
+        <img src="image/library/diagram_3.jpg" alt="lighting design title"/>
+    </section>
+
+
+<!-- End of custom code -->
+<div class="backtotop">
+    <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</div>    
+<footer class="end-nav">
+  <a class="previous" href="../index.html#portfolio">
+    <p>
+      < PREV></PREV></p>
+        <p class="project">
+          &nbsp;&nbsp;Back to Projects
+        </p>
+  </a>
+  <a class="next" href="bimcloud.html">
+    <p>NEXT ></p>
+    <p class="project">
+      BIM Cloud&nbsp;&nbsp;
+    </p>
+  </a>
+
+</footer>
+<script src="../p_js/js/lightbox-plus-jquery.min.js"></script>   
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Interactive Ground</title>
+    <link rel="shortcut icon" href="../p_image/logo.png">
+    <script src="https://use.fontawesome.com/f3a7dfaa36.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400|Roboto+Slab:300,400|Ubuntu:300,400" rel="stylesheet">
+    <script src='../p_js/jquery-3.1.1.min.js'></script>
+    <script src='../p_js/js.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../p_css/style.css" media="screen" title="no title">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-90454244-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <header class='non-fixed' id='top'>
+        <a href="../index.html">
+            <img class='logo_img' src="../p_image/logo.png" alt="logo of Siyu" />
+        </a>
+        <nav class="nav nav_bread">
+            <a href="#"><img class="bread_img" onclick="show_nav()" src="../p_image/bread.png" alt="nav bread icon" /></a>
+        </nav>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../Siyu-Guo-Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="title clearfix" style="background-color:rgb(240,240,240); color:rgba(0,0,0,0.8);">
+        <h1>Star-chitect</h1>
+        <p>Interactive Installation with Lego</p>
+        <img src="image/lego/title.jpg" alt="lighting design title"/>
+    </section>
+    <div class="full" id='full' onclick='show_page()'>
+        <ul>
+            <li><a href="../index.html#portfolio">Portfolio</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../Siyu-Guo-Resume.pdf" target="_blank">Resume</a></li>
+        </ul> 
+    </div>
+    
+    <!-- Begin of custom code -->    
+    <section class="page clearfix">
+        <div class="clearfix" style="border-bottom:1px solid rgba(0,0,0,0.2);">
+            <div class="col-md-6">
+                <p>
+                  <b>Project Type:&nbsp;&nbsp;</b>Interactive installation
+                </p>
+                <p>
+                  <b>Roles:&nbsp;&nbsp;</b>Designer &amp; maker &amp; coder
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p>
+                  <b>Team:&nbsp;&nbsp;</b>Joel Putnum, Marya Kanakis, David Walczyk
+                </p>
+                <p>
+                  <b>Timeline:&nbsp;&nbsp;</b>Spring 2016
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page clearfix" style="margin-top:-80px;">
+      <h1 class="center">Design Challenge -<br>Provide an interactive Lego installation for Chicago science and Industry museum </h1>
+      <p class="text">
+        Starchitect is a interactive installation including a lego robot and VR frame. The project aim to help young kids recognize the most famous architects around the world and inspire them to imaging their dreamlike architecture through a unique VR exploration.
+        <br>
+        For architects, we are testing innovative way of architecture presentation. For children, we are testing a more interactive methods to enable them learning the fundamental knowledge of architecture.
+      </p>       
+      <div class="col-md-4" style="margin-top:10%;">
+        <h3>Step 1 - Sketch Out the Face</h3>
+        <p>
+          Using CAD drafting tool to sketch the famous architect face out.
+        </p>
+        <h3 style="margin-top:120%;">Step 2 - Apply the sketch to a clean lego head</h3>
+        <p>
+          After manifested identify the most distinctive features of his face with the most simple lines。
+        </p>
+        <h3 style="margin-top:100%;">Step 3 - Repeating process one &amp; two</h3>
+        <p>
+          Every architect we look for has its own distinctive characteristics and represents its own architectural genre.
+        </p>
+      </div>
+      <div class="col-md-8" style="magin: 0; border: 0;">
+            <iframe src="https://player.vimeo.com/video/200617889?autoplay=1&loop=1" width="900" height="564" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <img src="image/lego/diagram_1.png" style="transform: scale(0.7)" alt="" />
+          <img src="image/lego/diagram_2.png" />
+      </div>
+
+    </section>
+    
+    <section class="page clearfix grey">
+      <h1 class="center">Design Details</h1>
+        <p class="text">
+        The final product being divided into two parts. Interactive lego head and a VR headset. Both parts has been installed and exhibited in science technology museum at Chicago. In the VR headset, 10 different architecture scenes has been pre-modeled and installed by our team members.
+        </p>
+      <div class="col-md-8">
+          <img src="image/lego/diagram_3.png" alt="" />
+      </div>
+      <div class="col-md-4">
+        <h3>The Interactive Head</h3>
+        <p>
+        Eye on the architect's face will look at different direction when the kids move either left of right hand.
+        </p>
+      </div>
+
+      <div class="col-md-8">
+      </div>
+      <div class="col-md-4">
+        <h3>How does head Work</h3>
+        <p>
+        Image on the left shows how the users will access to the installation. The other diagram shows all the electronic devices I have been used in the head part.
+        </p>
+      </div>
+      
+      <div class="col-md-8">
+        <a href ="image/lego/diagram_5.png" target="_blank">
+          <img src="image/lego/diagram_5.png" alt="" />
+      </div>
+      <div class="col-md-4">
+        <h3>The Lego VR Headset</h3>
+        <p>
+        An VR lego frame with 10 different architect's masterpiece has also been prepared for this project. Through combination of Unity3D and lego bricks, our lego VR frame can bring kids to another level of understanding about living space.
+        </p>
+      </div>
+    </section>
+    
+    <section class="page clearfix"> 
+      <div class="col-md-8">
+          <img src="image/lego/diagram_6.png" alt="" />
+      </div>
+      <div class="col-md-4">
+        <h3>Prototype Documentation</h3>
+
+      </div>
+    </section>
+    
+
+<!-- End of custom code -->
+<div class="backtotop">
+    <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</div>    
+<footer class="end-nav">
+  <a class="previous" href="../index.html#portfolio">
+    <p>
+      < PREV></PREV></p>
+        <p class="project">
+          &nbsp;&nbsp;Back to Projects
+        </p>
+  </a>
+  <a class="next" href="farm.html">
+    <p>NEXT ></p>
+    <p class="project">
+      The Farm Block&nbsp;&nbsp;
+    </p>
+  </a>
+
+</footer>
+<script src="../p_js/js/lightbox-plus-jquery.min.js"></script>   
+</body>
+</html>

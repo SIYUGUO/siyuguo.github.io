@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Interactive Ground</title>
+    <link rel="shortcut icon" href="../p_image/logo.png">
+    <script src="https://use.fontawesome.com/f3a7dfaa36.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400|Roboto+Slab:300,400|Ubuntu:300,400" rel="stylesheet">
+    <script src='../p_js/jquery-3.1.1.min.js'></script>
+    <script src='../p_js/js.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../p_css/style.css" media="screen" title="no title">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-90454244-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <header class='non-fixed' id='top'>
+        <a href="../index.html">
+            <img class='logo_img' src="../p_image/logo-dark.png" alt="logo of Siyu" />
+        </a>
+        <nav class="nav nav_bread">
+            <a href="#"><img class="bread_img" onclick="show_nav()" src="../p_image/bread.png" alt="nav bread icon" /></a>
+        </nav>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../Siyu-Guo-Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="title clearfix" style="background-color:rgb(228,228,228); color:rgba(0,0,0,0.8);">
+        <h1>A Story of Tensegrity_2.0</h1>
+        <p>Exploration on kinetic tensegrity "X" module"</p>
+        <img src="image/tensegrity_2/title.jpg" alt="lighting design title"/>
+    </section>
+    <div class="full" id='full' onclick='show_page()'>
+        <ul>
+            <li><a href="../index.html#portfolio">Portfolio</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../Siyu-Guo-Resume.pdf" target="_blank">Resume</a></li>
+        </ul> 
+    </div>
+    
+    <!-- Begin of custom code -->    
+    <section class="page clearfix">
+        <div class="clearfix" style="border-bottom:1px solid rgba(0,0,0,0.2);">
+            <div class="col-md-6">
+                <p>
+                  <b>Project Type:&nbsp;&nbsp;</b>Interactive installation
+                </p>
+                <p>
+                  <b>Roles:&nbsp;&nbsp;</b>Designer &amp; maker &amp; coder
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>
+                  <b>Team:&nbsp;&nbsp;</b>Individual
+                </p>
+                <p>
+                  <b>Timeline:&nbsp;&nbsp;</b>Fall 2015
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="page clearfix" style="margin-top:-80px;">
+    <h1 class="center">Design Challenge -<br>How can we maximize the flexibility of a tensegrity system? </h1>
+    <p class="text">
+    X module tensegrity was designed by Kenneth Snelson in 1948, this new assembly of two "x-modules" represents the first step in a construction process -- adding module after module -- that can be expanded indefinitely. Each open quadrant of any module offers a place to connect yet another x-module.
+    <br>
+    However, as the most "flexible" light weight structure system, it's still has the limitation due to the complexity of its cable system. In this project, I proposed several materials to replace the typical type of tensile member we had used in our tensegrity sculpture to explore more possibilities.
+    </p>
+    <br>
+    <img src="image/tensegrity_2/1.jpg" alt="lighting design title"/>
+    </section>
+
+    <section class="page clearfix">
+    <h1 class="center">Design &amp; Prototype</h1>
+    <p class="text">
+      Through a series of exploration among adujustable turnbuckles, Nitnol memorial wire as well as kinetic actuator, I developed a prototype which including arduino, microsoft kinect 2.0, two linear robitic actuator as well as Firefly plugin in Grasshopper to do the control.
+    </p>
+    <img src="image/tensegrity_2/2.jpg" alt="lighting design title"/>
+    <div class="clearfix" >
+            <div class="col-sm-5" style="padding:0;">
+              <div class="" style="margin-top:50%;">
+                <h2>Demo</h2>
+                <p class="sm-hide">The movement of the X module is following the height of left &amp; right hand.        </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+
+              <div class="" style="position:relative">
+                <iframe width="640" height="564" src="https://player.vimeo.com/video/198491828" frameborder="0" allowFullScreen mozallowfullscreen webkitAllowFullScreen></iframe>
+              </div>
+            </div>
+    </div>
+    </section>
+
+    <section class="page clearfix" style="background-color:rgb(240,240,240)">
+        <h1 class="center">Apply this research to AEC industry Design </h1>
+        <p class="text">
+          The robotic tensegrity prototype is a pre-research for the Breathing Pavilion Project. The intention of this innovative pavilion is to brainstorming the possibilities of applying the kinetic tensegrity system to the real-world architectural space which could maximize the space efficiency and flexibility through this structural system.
+        </p>
+        <img src="image/tensegrity_2/3.jpg" alt="lighting design title"/>
+    </section>
+    
+    <section class="page clearfix">
+        <h1 class="center">Form Generated Through Grasshopper</h1>
+        <p class="text">
+          The ideal methods of conducting a tensegrity simulation is using kangaroo. However, Kangaroo has its limitation on the calculation efﬁcency and accuracy. What I proposed in this project is a customized scripts which will directly read the input surface and generating the nodes right on top of it.
+          <br>
+          Although what I showed at this project during that time was using a X truss system, I’ve learned in the last two years that double tetra is the way to go in the current construction ﬁeld. The script below mainly using for generating and rotating the X shape on different normal vector.
+        </p>
+        <br>
+        <img src="image/tensegrity_2/4.jpg" alt="lighting design title"/>
+    </section>
+    
+    <section class="page clearfix" style="background-color:rgb(240,240,240)">
+        <h1 class="center">Design Details on the structural joints</h1>
+        <p class="text">
+          In this project, I choose glassfiber as the main material for the compression member due to its stiffness and weight. The image below shows two possibilities of using different cover on top of the structure, one is the simple film which will provide the most free of form transformation, while the other is a solar responsive cover system.
+          <br>
+          During that time the base has been designed as a two way sliding system in order to maximize the possibility of structure conﬁguration. However, with double tetra system, I don’t need to do this.
+        </p>
+        <img src="image/tensegrity_2/5.jpg" alt="lighting design title"/>
+    </section>
+
+<!-- End of custom code -->
+<div class="backtotop">
+    <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</div>    
+<footer class="end-nav">
+  <a class="previous" href="../index.html#portfolio">
+    <p>
+      < PREV></PREV></p>
+        <p class="project">
+          &nbsp;&nbsp;Back to Projects
+        </p>
+  </a>
+  <a class="next" href="lego.html">
+    <p>NEXT ></p>
+    <p class="project">
+      Star-chitect&nbsp;&nbsp;
+    </p>
+  </a>
+
+</footer>
+<script src="../p_js/js/lightbox-plus-jquery.min.js"></script>   
+</body>
+</html>

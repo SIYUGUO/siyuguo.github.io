@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Interactive Ground</title>
+    <link rel="shortcut icon" href="../p_image/logo.png">
+    <script src="https://use.fontawesome.com/f3a7dfaa36.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400|Roboto+Slab:300,400|Ubuntu:300,400" rel="stylesheet">
+    <script src='../p_js/jquery-3.1.1.min.js'></script>
+    <script src='../p_js/js.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../p_css/style.css" media="screen" title="no title">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-90454244-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <header class='non-fixed' id='top'>
+        <a href="../index.html">
+            <img class='logo_img' src="../p_image/logo.png" alt="logo of Siyu Guo" />
+        </a>
+        <nav class="nav nav_bread">
+            <a href="#"><img class="bread_img" onclick="show_nav()" src="../p_image/bread.png" alt="nav bread icon" /></a>
+        </nav>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../Siyu-Guo-Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="full" id='full' onclick='show_page()'>
+        <ul>
+            <li><a href="../index.html#portfolio">Portfolio</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../Siyu-Guo-Resume.pdf" target="_blank">Resume</a></li>
+        </ul> 
+    </div>
+    
+    <!-- Begin of custom code -->
+    <section class="title clearfix" style="background-color:rgb(245,244,243)">
+        <h1 style="color:rgba(0,0,0,0.8);">A Story of Tensegrity_1.0</h1>
+
+        <img src="image/tensegrity/title.jpg" alt="lighting design title"/>
+    </section>
+    
+    <section class="page clearfix">
+        <div class="clearfix" style="border-bottom:1px solid rgba(0,0,0,0.2);">
+            <div class="col-md-6">
+                <p>
+                  <b>Project Type:&nbsp;&nbsp;</b>Art installation
+                </p>
+                <p>
+                  <b>Roles:&nbsp;&nbsp;</b>Designer &amp; maker &amp; coder
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>
+                  <b>Team:&nbsp;&nbsp;</b>Amanda Willams, Andrea Rovetta, Suedeshna Sen
+                </p>
+                <p>
+                  <b>Timeline:&nbsp;&nbsp;</b>fall 2015
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="page clearfix" style="margin-top:-80px;">
+    <h1 class="center">Design Challenge -<br>How can we simulate the form of tensegrity sculpture before we contruct it? </h1>
+    <p class="text">
+    When we building a tensegrity sculpture, it is always tricky for one to find out the accurate length of tensile cable and compression struts without enough knowledge of tensegrity structural calculation. During the time when I interning for Amanda Williams studio, I was thinking about the possiblities of customize a grasshopper script to solve this problem.
+
+    Within the help from underwood pavilion team and tensegrity plugin maker Masaaki Miki, I've developed and contructed a simple tensegrity sculpture through the grasshopper calculation. 
+    </p>
+    <div class="clearfix">
+      <div class="col-md-5">
+        <h2 style="text-align:left;">Single 4 Struts Tensegrity Module Simulation</h2>
+        <p>
+          Start from analyze the basic elements of a 4 struts tensegrity module in grasshopper, tested several plugins such as Goat, Galapagus to allow the scripts do the calculation automatically. 
+        </p>
+      </div>
+      <div class="col-md-7">
+        <img src="image/tensegrity/grasshopper_1.jpg" alt="" />
+      </div>
+    </div>
+    <div class="clearfix">
+      <div class="col-md-5">
+        <h2 style="text-align:left;">Multiple Module Aggregation Simulation</h2>
+        <p>
+          Kangaroo is the plugin that played the most critical role in this step.
+        </p>
+      </div>
+      <div class="col-md-7">
+        <img src="image/tensegrity/grasshopper_2.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+  
+  <section class="page clearfix grey">
+  <h1 class="center">Prototype &amp; Construction</h1>
+  <p class="text">
+    We then made the installation for the University of Chicago's art studio for their openning show.
+    Through the control of grasshopper simulation, we made the installation in exactly the form we want
+  </p>
+  <div class="clearfix">
+    <div class="col-md-5">
+      <h3>Making</h3>
+      <p>
+        We made each module with 4 aluminum pipes and 12 metal cables, and three piece of fabric. Each cable is adjustable with a galvanized turnbuckle.
+      </p>
+    </div>
+    <div class="col-md-7">
+      <img src="image/tensegrity/model_3.png" alt="" />
+    </div>
+  </div>
+  <div class="clearfix">
+    <div class="col-md-5">
+      <h3>Exhibition</h3>
+      <p>
+        Each 4 struts module is connected with cables. The first and last module is attached to the wall the floor.
+      </p>
+    </div>
+    <div class="col-md-7">
+      <img src='image/tensegrity/model_1.jpg' alt="" />
+    </div>
+  </div>
+  <div class="clearfix">
+    <div class="col-md-5">
+      <h3>Details</h3>
+       <p>
+        View between layer of fabrics.
+      </p>
+
+    </div>
+    <div class="col-md-7">
+      <img src='image/tensegrity/model_2.jpg' alt="" />
+    </div>
+  </div>
+</section>
+
+<!-- End of custom code -->
+<div class="backtotop">
+    <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</div>    
+<footer class="end-nav">
+  <a class="previous" href="../index.html#portfolio">
+    <p>
+      < PREV></PREV></p>
+        <p class="project">
+          &nbsp;&nbsp;Back to Projects
+        </p>
+  </a>
+  <a class="next" href="tensegrity_2.html">
+    <p>NEXT ></p>
+    <p class="project">
+      A Tensegrity Story 2.0&nbsp;&nbsp;
+    </p>
+  </a>
+
+</footer>
+<script src="../p_js/js/lightbox-plus-jquery.min.js"></script>   
+</body>
+</html>

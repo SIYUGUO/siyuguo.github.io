@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>Interactive Ground</title>
+    <link rel="shortcut icon" href="../p_image/logo.png">
+    <script src="https://use.fontawesome.com/f3a7dfaa36.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400|Roboto+Slab:300,400|Ubuntu:300,400" rel="stylesheet">
+    <script src='../p_js/jquery-3.1.1.min.js'></script>
+    <script src='../p_js/js.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../p_css/style.css" media="screen" title="no title">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-90454244-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <header class='non-fixed' id='top'>
+        <a href="../index.html">
+            <img class='logo_img' src="../p_image/logo.png" alt="logo of Siyu" />
+        </a>
+        <nav class="nav nav_bread">
+            <a href="#"><img class="bread_img" onclick="show_nav()" src="../p_image/bread.png" alt="nav bread icon" /></a>
+        </nav>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../Siyu-Guo-Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="title clearfix" style="background-color:rgb(245,244,243); color:rgba(0,0,0,0.8);">
+        <h1>The Farm Block</h1>
+        <p>Conceptual Urban Planning</p>
+        <img src="image/farm/title.jpg" alt="lighting design title"/>
+    </section>
+    <div class="full" id='full' onclick='show_page()'>
+        <ul>
+            <li><a href="../index.html#portfolio">Portfolio</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../Siyu-Guo-Resume.pdf" target="_blank">Resume</a></li>
+        </ul> 
+    </div>
+    
+    <!-- Begin of custom code -->    
+    <section class="page clearfix">
+        <div class="clearfix" style="border-bottom:1px solid rgba(0,0,0,0.2);">
+            <div class="col-md-6">
+                <p>
+                  <b>Project Type:&nbsp;&nbsp;</b>Urban Design
+                </p>
+                <p>
+                  <b>Roles:&nbsp;&nbsp;</b>Designer
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>
+                  <b>Team:&nbsp;&nbsp;</b>Group with Andrea Rovetta
+                </p>
+                <p>
+                  <b>Timeline:&nbsp;&nbsp;</b>Fall 2014
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="page clearfix" style="margin-top:-80px;">
+        <h1 class="center">Design Challenge -<br>Design a food self-sufficient city block of 10000 people </h1>
+        <p class="text">
+        With the help of computer, we find that data start to play a important role in the way the city is understood and envisioned. How can architect develop a data platform and utilize these data to reform the shape of living space?
+        <br>
+        The aim of this project was to improve the relationship be tween systems of food production, distribution and consumption in urban areas through the development of a ‘calculator’, a computational methodology that translated hard data from farming strategies, human dietary needs &amp; behaviors, space optimization related to farming and living, into functional schemes. The resultant data helped formulate a series of design schemes for speculative models for self -sufficient integrated living.        
+        </p>
+        <br>
+        <img src="image/tensegrity_2/1.jpg" alt="lighting design title"/>
+    </section>
+
+    <section class="page clearfix" style="margin-top:-80px;">
+        <h1 class='center'>Calculating the space requirement of different crops</h1>
+        <p class="text">
+        16 students working on 45 most common crops and fullﬁll human’s daily life. The goal of the research is to ﬁgure the basic information of each crops including farming cycle and farming.
+        <br>
+        The picture below is the example of wheet in the farm data collection book. Generally, the light requirement, water requirement, temperature range, soil type, depth of the soil as well as companion crops/animals of the wheet are the main data we care about.
+        <br>
+        Based on the data collected on phase 1, I try to construct a grasshopper calculator which will directly presenting to us how much space we need to farm each crops for 10000 people. Start ing from setup the each square meter’s production for each crop, I easily ﬁgured out how much space we need for all those 45 crops for 10000 people.
+        </p>
+        <br>
+        <img src="image/farm/diagram_1.png" alt="lighting design title"/>
+    </section>
+
+    <section class="page clearfix grey">
+        <h1 class="center">Integrating the farming data with 10000 people's life needs</h1>
+        <p class="text">
+          In order to achieve the highest efficiency for both space &amp;farming cycle. A highly compressed cubic machine become our first solution. 
+        </p>
+        <img src="image/farm/diagram_2.jpg" alt="lighting design title"/>
+        <img src="image/farm/diagram_5.png" alt="lighting design title"/>
+    </section>
+
+
+    
+
+<!-- End of custom code -->
+<div class="backtotop">
+    <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</div>    
+<footer class="end-nav">
+  <a class="previous" href="../index.html#portfolio">
+    <p>
+      < PREV></PREV></p>
+        <p class="project">
+          &nbsp;&nbsp;Back to Projects
+        </p>
+  </a>
+  <a class="next" href="library.html">
+    <p>NEXT ></p>
+    <p class="project">
+      Light-brary&nbsp;&nbsp;
+    </p>
+  </a>
+
+</footer>
+<script src="../p_js/js/lightbox-plus-jquery.min.js"></script>   
+</body>
+</html>
